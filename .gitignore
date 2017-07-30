@@ -120,3 +120,6 @@ crashlytics-build.properties
 tmp
 app/.divshot-cache/
 app/divshot.json
+
+
+app/app.js
