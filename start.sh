@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+#server=$(./node_modules/.bin/bower)
 server=$(which http-server)
 
 : ${HOST:=0.0.0.0}
