@@ -28,3 +28,300 @@
   content: "";
   padding: 0;
 }
+
+html, body {
+   font-family: sans-serif;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   background-color: #F7F8FB;
+   height: 100%;
+   -webkit-font-smoothing: antialiased; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F8FB;
+}
+
+.message {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.message__title {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 15px;
+  color: #47494E;
+  margin-bottom: 8px; }
+
+p {
+  -webkit-margin-after: 0px;
+  -webkit-margin-before: 0px;
+  font-size: 15px;
+  color: #7F828B;
+  line-height: 21px;
+  margin-bottom: 4px; }
+
+.btn {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #7F828B;
+  border: 1px solid #7F828B; }
+
+.hk-logo, .app-icon {
+  fill: #DBE1EC; }
+
+.info {
+  fill: #9FABBC; }
+
+body.friendly {
+  background: -webkit-linear-gradient(-45deg, #8363a1 0%, #74a8c3 100%);
+  background: linear-gradient(135deg, #8363a1 0%, #74a8c3 100%); }
+
+body.friendly .message__title {
+  color: #fff; }
+
+body.friendly p {
+  color: rgba(255, 255, 255, 0.6); }
+
+body.friendly .hk-logo, body.friendly .app-icon {
+  fill: rgba(255, 255, 255, 0.9); }
+
+body.friendly .info {
+  fill: rgba(255, 255, 255, 0.9); }
+
+body.friendly .btn {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.9); }
+
+.info_area {
+  position: fixed;
+  right: 12px;
+  bottom: 12px; }
+
+.logo {
+  position: fixed;
+  left: 12px;
+  bottom: 12px; }
+
+body {
+  font-family: sans-serif;
+}
+body fieldset {
+  box-shadow: 0 8px 10px #f7f7f7;
+}
+
+body.error fieldset {
+  box-shadow: 0 8px 10px #f7f7f7;
+}
+
+
+ul.items {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+}
+ul.items li {
+  width: 8px;
+  height: 8px;
+  margin: 10px 0;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+ul.items li.active {
+  opacity: 1;
+}
+
+form fieldset {
+  width: 400px;
+  height: 60px;
+  background: white;
+  border-radius: 3px;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: all 0.4s ease-in-out;
+}
+form fieldset input, form fieldset p {
+  display: inline-block;
+  width: 300px;
+  margin-left: 50px;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+form fieldset p {
+  margin-top: 22px;
+  text-align: center;
+}
+form fieldset input {
+  height: 40px;
+  margin-top: 8px;
+  border: none;
+  outline: none;
+}
+form fieldset .icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  transition: all 0.4s ease;
+}
+form fieldset .icon i {
+  position: absolute;
+  display: block;
+}
+form fieldset .icon i::before, form fieldset .icon i::after {
+  position: absolute;
+  content: "";
+}
+form fieldset .icon.left {
+  left: 10px;
+}
+form fieldset .icon.right {
+  right: 10px;
+  cursor: pointer;
+}
+form fieldset .icon.button:hover {
+  background: #f2f2f2;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+form fieldset.enable {
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.5s ease-out 0.2s;
+  transform: scale(1);
+  animation: enable 0.5s ease-out 0.2s;
+}
+form fieldset.disable {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  transform: translateY(120px) scale(0.9);
+}
+
+body.error fieldset {
+  transform-origin: 50% 100%;
+  animation: error 0.3s ease-out;
+}
+
+@keyframes enable {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes error {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+/**
+ * Icons in CSS, long as f****
+ */
+.icon .arrow {
+  width: 2px;
+  height: 17px;
+  top: 5px;
+  left: 14px;
+  background: #333333;
+}
+.icon .arrow::before {
+  width: 6px;
+  height: 6px;
+  bottom: -1px;
+  left: -3px;
+  border-color: #333333;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(45deg);
+}
+
+
+
+.icon .user {
+  width: 20px;
+  height: 16px;
+  top: 9px;
+  left: 5px;
+  box-shadow: 0 0 0 2px #333333 inset;
+  border-radius: 3px;
+}
+.icon .user::before {
+  width: 8px;
+  height: 8px;
+  top: -4px;
+  left: 4px;
+  border: 2px solid transparent;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+}
+.icon .user::after {
+  width: 6px;
+  height: 7px;
+  top: 4px;
+  left: 7px;
+  box-shadow: 0 0 0 2px #333333 inset;
+}
+
+.icon .heart {
+  width: 10px;
+  height: 10px;
+  top: 11px;
+  left: 7px;
+  background: #ff5233;
+  transform: rotate(45deg);
+}
+.icon .heart::before, .icon .heart::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5233;
+}
+.icon .heart::before {
+  left: -6px;
+}
+.icon .heart::after {
+  top: -6px;
+}
+
+canvas{ display: block; vertical-align: bottom; }
+
+/* ---- particles.js container ---- */
+#particles-js{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color:#F7F8FB;
+}

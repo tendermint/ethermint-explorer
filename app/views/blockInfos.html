@@ -1,10 +1,11 @@
 <div class="container" style="padding-top: 50px;">
 
-    <h1>Block
-        <small>View information about an Ethereum Block</small>
-    </h1>
 
     <div id="block-97785883" class="blockdiv">
+
+        <h1>Block
+            <small>View information about an Ethereum Block</small>
+        </h1>
         <table class="table table-striped" cellpadding="0" cellspacing="0" style="padding:0px;float:left;margin:0px;width:100%">
             <tbody>
             <tr>
@@ -30,12 +31,7 @@
                     {{timestamp}}
                 </td>
             </tr>
-            <tr>
-                <td>Difficulty</td>
-                <td>
-                    {{difficulty}}
-                </td>
-            </tr>
+
             <tr>
                 <td>Nonce</td>
                 <td>{{nonce}}</td>
@@ -45,12 +41,8 @@
                 <td>{{size}}</td>
             </tr>
             <tr>
-                <td>Miner</td>
+                <td>Validator</td>
                 <td><a href="./#/address/{{miner}}">{{miner}}</a></td>
-            </tr>
-            <tr>
-                <td>Gas Limit</td>
-                <td>{{gasLimit}}</td>
             </tr>
             <tr>
                 <td>Data</td>
@@ -66,12 +58,13 @@
         </table>
     </div>
 
-    <h2 style="margin-top: 30px;">
-      Transactions
-      <small>- contained in current block</small>
-    </h2>
+
 
     <div ng-repeat="tx in transactions">
+        <h2 style="margin-top: 30px;">
+            Transactions
+            <small>- contained in current block</small>
+        </h2>
       <table class="table table-striped">
           <tbody>
           <tr>
@@ -88,10 +81,6 @@
           <tr>
               <td>To</td>
               <td><a href="./#/address/{{tx.to}}">{{tx.to}}</a></td>
-          </tr>
-          <tr>
-              <td>Gas</td>
-              <td>{{tx.gas}}</a></td>
           </tr>
           <tr>
               <td>Input</td>
