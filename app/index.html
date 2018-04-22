@@ -6,8 +6,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ethereum Block Explorer</title>
-  <meta name="description" content="">
+  <title>KI Blockchain Explorer [TESTNET]</title>
+  <meta name="description" content="The KI Blockchain is new Blockchain powered by a RBFT consensus protocol, bringing value to the Internet of Things.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -15,28 +15,48 @@
 
 </head>
 <body>
-  
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <span class="icon-bar"></span><a href="/#/" class="navbar-brand">Ether Block Explorer</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-            <form  name="search_form" ng-controller="mainCtrl" ng-submit="processRequest()"  class="navbar-form navbar-right">
-            <div class="form-group">
-            <input type="text" placeholder="Tx Hash, Address or Block number" name="requestType" required  ng-model="ethRequest"  class="form-control"><br>
-            </div>
-            <button type="submit" class="btn btn-success">Search</button></form>
-            </ul>
-	    </div>
-    </div>
-</nav>
+
+<!-- particles.js container --> <div id="particles-js" class="message">
 
 
+<div class="spacer"></div>
+<div class="message">
+    <svg width="49" height="51" style="min-height:51px" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.9468 10.0288L20.5548.995c2.4433-1.3267 5.45-1.3267 7.8936 0l16.6078 9.0338C47.4966 11.3585 49 13.8102 49 16.4666V34.534c0 2.6537-1.5034 5.1082-3.9438 6.438l-16.6078 9.0307c-2.4435 1.3297-5.4503 1.3297-7.8937 0L3.9467 40.972C1.5035 39.642 0 37.1876 0 34.534V16.4667c0-2.6564 1.5034-5.108 3.9468-6.4378z" class="app-icon" fill-rule="evenodd"></path></svg>
+    <div class="message__title"> KI Blockchain Explorer </div>
 
-  <div ng-view></div>
+    <form name="search_form" ng-controller="mainCtrl" ng-submit="processRequest()"  class="navbar-form navbar-right">
+        <ul class="items"></ul>
+        <fieldset class="username enable">
+            <div class="icon left"><i class="user"></i></div>
+            <input type="text" name="requestType" placeholder="Tx Hash, Address or Block number" required  ng-model="ethRequest"  />
+            <div class="icon right button"><i class="arrow"></i></div>
+        </fieldset>
+    </form>
 
+
+    <div ng-view></div>
+</div>
+
+
+<div class="logo"> <svg width="125" height="24" xmlns="http://www.w3.org/2000/svg"><g class="info" fill-rule="evenodd">
+
+    <path d="M43.4690371,12.1457292 L50.2799785,12.1457292 L50.2799785,19.636875 C49.3683907,20.4801042 48.2827322,21.13375 47.0237859,21.5965104 C45.7640566,22.0590104 44.4633541,22.2910417 43.1208956,22.2910417 C41.7121493,22.2910417 40.4816493,22.0678646 39.4293956,21.62125 C38.376881,21.1748958 37.5031346,20.5465104 36.8071127,19.7358333 C36.1108298,18.9259375 35.5888785,17.94625 35.2407371,16.7965104 C34.8928566,15.6475521 34.7187859,14.3782813 34.7187859,12.9892188 C34.7187859,11.5504167 34.9090371,10.2605729 35.2905834,9.11916667 C35.6716078,7.97828125 36.2141761,7.00302083 36.9185493,6.19260417 C37.6229224,5.38244792 38.4804883,4.76239583 39.4917688,4.3321875 C40.5022663,3.9025 41.62942,3.68739583 42.8721859,3.68739583 C44.016042,3.68739583 44.9975712,3.82776042 45.8180785,4.10875 C46.6385859,4.39026042 47.3343468,4.77828125 47.9061444,5.274375 C48.477681,5.77072917 48.9333444,6.35015625 49.2733956,7.01083333 C49.6129249,7.67255208 49.857459,8.38375 50.0067371,9.14442708 L46.3277639,9.61526042 C46.2280712,9.16916667 46.1077615,8.77619792 45.9670956,8.43713542 C45.8261688,8.09833333 45.6228688,7.80927083 45.3582395,7.56890625 C45.0928273,7.32958333 44.7616493,7.14755208 44.3639224,7.02359375 C43.9661956,6.899375 43.4690371,6.83739583 42.8721859,6.83739583 C41.4305566,6.83739583 40.3532493,7.37515625 39.6407859,8.44963542 C38.9280615,9.52489583 38.5718298,11.0379167 38.5718298,12.9892188 C38.5718298,14.9571875 38.932498,16.4741146 39.6530517,17.5410417 C40.3741273,18.6071875 41.5464298,19.1405208 43.170481,19.1405208 C43.9494932,19.1405208 44.624898,19.0626563 45.1966956,18.9051042 C45.7684932,18.7483333 46.3191517,18.5045833 46.8497151,18.1733333 L46.8497151,15.2217708 L43.4690371,15.2217708 L43.4690371,12.1457292 Z" id="Fill-1" fill-rule="evenodd"></path>
+    <path d="M53.3376732,7.28421875 L65.965761,7.28421875 L65.965761,4.13369792 L53.3376732,4.13369792 L53.3376732,7.28421875 Z M53.3376732,14.3282292 L65.965761,14.3282292 L65.965761,11.1534896 L53.3376732,11.1534896 L53.3376732,14.3282292 Z M53.3376732,21.8446354 L65.965761,21.8446354 L65.965761,18.694375 L53.3376732,18.694375 L53.3376732,21.8446354 Z" id="Fill-3" fill-rule="evenodd"></path>
+    <polygon id="Fill-5" fill-rule="evenodd" points="69.0972856 4.13356771 72.4283783 4.13356771 79.7367393 15.7424219 79.7367393 4.13356771 83.3410734 4.13356771 83.3410734 21.8445052 80.0350344 21.8445052 72.7018807 10.3348698 72.7018807 21.8445052 69.0972856 21.8445052"></polygon>
+    <polygon id="Fill-6" fill-rule="evenodd" points="86.4730417 4.13356771 90.2018612 4.13356771 90.2018612 11.2275781 96.7395612 4.13356771 100.79173 4.13356771 94.9002051 10.7814844 101.437905 21.8445052 97.3113588 21.8445052 92.3147198 13.187474 90.2018612 15.3458073 90.2018612 21.8445052 86.4730417 21.8445052"></polygon>
+    <polygon id="Fill-7" fill-rule="evenodd" points="103.252129 21.8446354 106.956156 21.8446354 106.956156 4.13369792 103.252129 4.13369792"></polygon>
+    <polygon id="Fill-8" fill-rule="evenodd" points="7.28072366 -2.60416667e-05 2.6097561e-05 7.26507812 2.6097561e-05 17.5398177 7.28072366 24.8051823 17.5775163 24.8051823 24.8584749 17.5398177 24.8584749 7.26507812 17.5775163 -2.60416667e-05"></polygon>
+
+
+</g></svg> </div>
+
+    <div class="info_area"> <a href="https://devcenter.heroku.com/articles/error-pages" target="_blank"> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 24c6.6274 0 12-5.3726 12-12S18.6274 0 12 0 0 5.3726 0 12s5.3726 12 12 12zm0-1.25c5.937 0 10.75-4.813 10.75-10.75S17.937 1.25 12 1.25 1.25 6.063 1.25 12 6.063 22.75 12 22.75zM12.9653 8C12.0593 8 11.5 7.25 11.5 6.519c0-.824.6805-1.519 1.587-1.519 1.0465 0 1.413.7506 1.413 1.3728C14.5005 7.396 13.7682 8 12.9653 8zM9.3 18.021c.3237-2.1306 1.5255-4.9562 1.772-6.6087l-1.2013-.043c0-.6092 0-1.1962.0155-1.7824C11.0566 9.3907 12.6125 9 12.89 9c.123 0 .585.565.724.8913-.277 1.8268-1.7406 6.174-1.864 6.979-.0156.087-.0156.1742.0467.1742.1534 0 .5543-.087.9856-.218.031.566.0772 1.1304.1076 1.6962-.6934.282-1.541.4773-2.8654.4773-.1235 0-.6165-.6094-.7246-.979z" class="info" fill-rule="evenodd">
+
+</path>
+</svg> </a> </div>
+
+</div>
 <!--Libs-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
@@ -48,6 +68,9 @@
   <script src="app.js"></script>
 
 <!--Controllers-->
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="scripts/controllers/mainController.js"></script>
   <script src="scripts/controllers/addressInfoController.js"></script>
   <script src="scripts/controllers/blockInfosController.js"></script>
@@ -74,12 +97,19 @@
     <footer>
         <hr>
         <p>
-            © Etherparty.io 2017 | <a href="http://github.com/etherparty/explorer">Fork me on GitHub</a>
+            © Genki 2018
         </p>
     </footer>
 </div>
 <script>
-$("#modaltext").text( 'geth --rpc --rpccorsdomain "'+ window.location.protocol + '//' + window.location.host + '"' );
+//$("#modaltext").text( 'geth --rpc --rpccorsdomain "'+ window.location.protocol + '//' + window.location.host + '"' );
+
+/*particlesJS("particles-js",
+    {"particles":
+            {"number":
+                    {"value":40,"density":
+                            {"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+*/
 </script>
 </body>
 </html>

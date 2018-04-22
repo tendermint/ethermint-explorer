@@ -2,7 +2,7 @@ angular.module('ethExplorer')
     .controller('mainCtrl', function ($rootScope, $scope, $location) {
 
 	var web3 = $rootScope.web3;
-	var maxBlocks = 50; // TODO: into setting file or user select
+	var maxBlocks = 1; // TODO: into setting file or user select
 	var blockNum = $scope.blockNum = parseInt(web3.eth.blockNumber, 10);
 	if (maxBlocks > blockNum) {
 	    maxBlocks = blockNum + 1;
@@ -13,7 +13,7 @@ angular.module('ethExplorer')
 	for (var i = 0; i < maxBlocks; ++i) {
 	    $scope.blocks.push(web3.eth.getBlock(blockNum - i));
 	}
-	
+
         $scope.processRequest = function() {
              var requestStr = $scope.ethRequest.split('0x').join('');
 
